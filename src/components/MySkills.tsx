@@ -17,7 +17,7 @@ const skills = [
 ];
 const MySkills = () => {
   return (
-    <div className="text-center mb-4">
+    <div className="text-center mb-6">
       <h1 className="text-2xl font-bold mb-2">My Skills</h1>
       <div className="flex flex-wrap flex-row justify-center md:px-24 md:justify-center">
         {skills.map((item) => {

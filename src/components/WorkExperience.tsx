@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const workExperience = [
   {
     role: "Software Engineer",
@@ -18,7 +20,7 @@ const workExperience = [
 
 const WorkExperience = () => {
   return (
-    <div className="flex flex-col justify-center items-center text-center mb-4">
+    <div className="flex flex-col justify-center items-center text-center mb-6">
       <h1 className="text-center text-2xl font-bold mb-2">Work Experience</h1>
       {workExperience.map((item) => (
         <div className="m-1 w-full max-w-xl p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -33,7 +35,7 @@ const WorkExperience = () => {
               <li key={nestedItem}>{nestedItem}</li>
             ))}
           </ul>
-          <a
+          <Link
             href="#projects"
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
@@ -53,7 +55,7 @@ const WorkExperience = () => {
                 d="M1 5h12m0 0L9 1m4 4L9 9"
               />
             </svg>
-          </a>
+          </Link>
         </div>
       ))}
     </div>

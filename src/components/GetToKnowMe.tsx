@@ -3,15 +3,12 @@ import {
   AiOutlineLinkedin,
   AiOutlineTwitter,
 } from "react-icons/ai";
-import { BsDiscord } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
 const GetToKnowMe = () => {
   return (
-    <div className="mb-4">
-      <h1 className="text-center text-2xl font-bold mb-2 md:text-left">
-        Get to know me!
-      </h1>
+    <div className="flex flex-col justify-center items-center text-center mb-6">
+      <h1 className="text-center text-2xl font-bold mb-2">Get to know me!</h1>
       <div className="flex flex-row justify-center">
         <h2 className="text-l font-bold mb-2 flex flex-row">Interests</h2>
         &nbsp;-&nbsp;

@@ -21,7 +21,7 @@ const education = [
 
 const Education = () => {
   return (
-    <div className="flex flex-col justify-center items-center text-center mb-4">
+    <div className="flex flex-col justify-center items-center text-center mb-6">
       <h1 className="text-2xl font-bold mb-2">Education</h1>
       {education.map((item) => (
         <div className="w-full max-w-xl m-1 px-6 py-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

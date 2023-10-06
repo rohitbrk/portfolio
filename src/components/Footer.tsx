@@ -5,7 +5,6 @@ import {
   AiOutlineLinkedin,
 } from "react-icons/ai";
 
-import { BsDiscord } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
 const Footer = () => {

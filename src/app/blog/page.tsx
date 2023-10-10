@@ -1,24 +1,8 @@
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
+import { getBlogs } from "../../utils/blog.ts";
 import Link from "next/link";
 
 const Blog = () => {
-  const blogDir = "src/app/blogs";
-  const files = fs.readdirSync(path.join(blogDir));
-
-  const blogs = files.map((filename) => {
-    const fileContent = fs.readFileSync(path.join(blogDir, filename), "utf-8");
-
-    const { data } = matter(fileContent);
-    return {
-      slug: filename.replace(".mdx", ""),
-      imgUrl: data.imgUrl,
-      title: data.title,
-      desc: data.desc,
-    };
-  });
-
+  const blogs = getBlogs();
   return (
     <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl m-20">
       <div className="p-2 flex flex-col gap-1 justify-center items-center">

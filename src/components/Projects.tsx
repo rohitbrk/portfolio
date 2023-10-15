@@ -9,24 +9,23 @@ const projects = [
     name: "Predict Nationality",
     description:
       "Just A Fun App which will predict the nationality based on person's name",
-    image: "/thankfulthoughts.png",
+    image: "/project-predict-nationality.png",
     github: "https://github.com/rohitbrk/prediction-app-nextjs13",
-    link: "https://predict-nationality.vercel.app/",
+    link: "https://prediction-app-nextjs.vercel.app/",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    name: "Hotel Menu",
+    description: "Simple Hotel Menu page using ReactJs",
+    image: "/project-hotel-menu.png",
+    github: "https://github.com/rohitbrk/Hotel-Menu-Reactjs",
+    link: "https://hotel-menu-using-react.netlify.app/",
   },
   {
-    name: "Kator Family Photos",
-    description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+    name: "Classic Snake Game",
+    description: "Snake game using ReactJs",
+    image: "/project-snake-game.png",
+    github: "https://github.com/rohitbrk/Snake-Game-Reactjs",
+    link: "https://snake-game-using-react.netlify.app/",
   },
 ];
 

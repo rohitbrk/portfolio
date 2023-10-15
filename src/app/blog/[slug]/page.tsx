@@ -9,8 +9,6 @@ const Page = ({ params }: Props) => {
 
   return (
     <article className="prose prose-sm md:prose-base lg:prose-lg prose-slate dark:prose-invert mx-auto">
-      <h1>{props.fontMatter.title}</h1>
-
       <MDXRemote source={props.content}></MDXRemote>
     </article>
   );

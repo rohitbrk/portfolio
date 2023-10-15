@@ -16,6 +16,7 @@ const getBlogs = () => {
       imgUrl: data.imgUrl,
       title: data.title,
       desc: data.desc,
+      date: data.date,
     };
   });
 

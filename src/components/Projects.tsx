@@ -12,6 +12,7 @@ const projects = [
     image: "/project-predict-nationality.png",
     github: "https://github.com/rohitbrk/prediction-app-nextjs13",
     link: "https://prediction-app-nextjs.vercel.app/",
+    tags: ["NextJs-13", "tailwind-css"],
   },
   {
     name: "Hotel Menu",
@@ -19,6 +20,7 @@ const projects = [
     image: "/project-hotel-menu.png",
     github: "https://github.com/rohitbrk/Hotel-Menu-Reactjs",
     link: "https://hotel-menu-using-react.netlify.app/",
+    tags: ["ReactJs"],
   },
   {
     name: "Classic Snake Game",
@@ -26,6 +28,7 @@ const projects = [
     image: "/project-snake-game.png",
     github: "https://github.com/rohitbrk/Snake-Game-Reactjs",
     link: "https://snake-game-using-react.netlify.app/",
+    tags: ["ReactJs"],
   },
 ];
 
@@ -59,6 +62,18 @@ const Projects = () => {
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
+                    <div className="mb-4 flex flex-wrap flex-row justify-start md:justify-start">
+                      {project.tags.map((tag) => {
+                        return (
+                          <p
+                            key={tag}
+                            className="px-4 py-2 mr-2 mt-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                          >
+                            {tag}
+                          </p>
+                        );
+                      })}
+                    </div>
                     <div className="flex flex-row align-bottom space-x-4">
                       <Link href={project.github} target="_blank">
                         <BsGithub

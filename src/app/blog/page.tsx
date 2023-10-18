@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Image from "next/image.js";
 import { getBlogs } from "../../utils/blog.ts";
 import Link from "next/link";

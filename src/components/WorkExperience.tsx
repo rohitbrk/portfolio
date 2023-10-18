@@ -4,15 +4,19 @@ const workExperience = [
   {
     role: "Software Engineer",
     company: "OpenText",
-    points: ["Worked with ReactJs and Docker"],
+    points: [
+      "Worked on a Product which delivers dynamic message templates for users based on the input file.",
+      "Worked on Dashboard and related components (FE and BE). Developed features for ease of use.",
+    ],
     period: "Oct 2022 - Present",
   },
   {
     role: "Fullstack Developer",
     company: "1Pharmacy Network",
     points: [
-      "Worked with ReactJs",
-      "At Backend, AWS API gateway and Serverless Functions using Python",
+      "Worked on a product which acts as bridge between people and local retail medical shops.",
+      'Worked on "products filter" and Dashboard (ReactJs).',
+      'At backend, "pattern searching" API (Lambda functions - Python)',
     ],
     period: "Dec 2021 - Jun 2022",
   },

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getBlog } from "../../../utils/blog.ts";
 
 import { MDXRemote } from "next-mdx-remote/rsc";

@@ -1,10 +1,3 @@
-// ---
-// title: ReactJs
-// date: 07 Oct 2023
-// imgUrl: /reactjs-logo.jpg
-// desc: Frontend Engineering with ReactJs
-// ---
-
 const ReactJs = () => {
   return (
     <div style={{ marginTop: "6rem" }}>

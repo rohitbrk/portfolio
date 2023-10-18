@@ -1,10 +1,3 @@
-// ---
-// title: NodeJs
-// date: 05 Oct 2023
-// imgUrl: /nodejs-logo.jpg
-// desc: Introduction to Backend Engineering - NodeJs
-// ---
-
 const NodeJs = () => {
   return (
     <div style={{ marginTop: "6rem" }}>

@@ -5,7 +5,7 @@ import ReactJs from "../../../blogs/ReactJs";
 type Props = { params: { slug: string } };
 
 const Page = ({ params }: Props) => {
-  let ComponentToRender = null;
+  let ComponentToRender;
   if (params.slug === "ReactJs") ComponentToRender = ReactJs;
   if (params.slug === "NodeJs") ComponentToRender = NodeJs;
 

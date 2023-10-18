@@ -1,10 +1,24 @@
 // @ts-nocheck
 import Image from "next/image.js";
-import { getBlogs } from "../../utils/blog.ts";
 import Link from "next/link";
 
 const Blog = () => {
-  const blogs = getBlogs();
+  const blogs = [
+    {
+      slug: "ReactJs",
+      imgUrl: "/reactjs-logo.jpg",
+      title: "ReactJs",
+      date: "07 Oct 2023",
+      desc: "Frontend Engineering with ReactJs",
+    },
+    {
+      slug: "NodeJs",
+      imgUrl: "/nodejs-logo.jpg",
+      title: "NodeJs",
+      date: "05 Oct 2023",
+      desc: "Introduction to Backend Engineering - NodeJs",
+    },
+  ];
   return (
     <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl m-20">
       <div className="p-2 flex flex-col gap-1 justify-center items-center">

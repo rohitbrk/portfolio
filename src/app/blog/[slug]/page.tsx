@@ -1,16 +1,17 @@
 // @ts-nocheck
-import { getBlog } from "../../../utils/blog.ts";
-
-import { MDXRemote } from "next-mdx-remote/rsc";
+import NodeJs from "../../../blogs/NodeJs";
+import ReactJs from "../../../blogs/ReactJs";
 
 type Props = { params: { slug: string } };
 
 const Page = ({ params }: Props) => {
-  const props = getBlog(params);
+  let ComponentToRender = null;
+  if (params.slug === "ReactJs") ComponentToRender = ReactJs;
+  if (params.slug === "NodeJs") ComponentToRender = NodeJs;
 
   return (
     <article className="prose prose-sm md:prose-base lg:prose-lg prose-slate dark:prose-invert mx-auto">
-      <MDXRemote source={props.content}></MDXRemote>
+      <ComponentToRender />
     </article>
   );
 };

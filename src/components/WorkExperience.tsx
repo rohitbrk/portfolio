@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const workExperience = [
   {
+    id: 1,
     role: "Software Engineer",
     company: "OpenText",
     points: [
@@ -11,6 +12,7 @@ const workExperience = [
     period: "Oct 2022 - Present",
   },
   {
+    id: 2,
     role: "Fullstack Developer",
     company: "1Pharmacy Network",
     points: [
@@ -27,7 +29,10 @@ const WorkExperience = () => {
     <div className="flex flex-col justify-center items-center text-center mb-6">
       <h1 className="text-center text-2xl font-bold mb-2">Work Experience</h1>
       {workExperience.map((item) => (
-        <div className="m-1 w-full max-w-xl p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div
+          key={item.id}
+          className="m-1 w-full max-w-xl p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
           <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
             {`${item.role} at ${item.company}`}
           </h5>

@@ -6,13 +6,22 @@ type Props = { params: { slug: string } };
 
 const Page = ({ params }: Props) => {
   let ComponentToRender;
-  if (params.slug === "ReactJs") ComponentToRender = ReactJs;
-  if (params.slug === "NodeJs") ComponentToRender = NodeJs;
+  // workaround for now
+  switch (params.slug) {
+    case "ReactJs":
+      ComponentToRender = ReactJs;
+      break;
+    case "NodeJs":
+      ComponentToRender = NodeJs;
+      break;
+  }
 
   return (
-    <article className="prose prose-sm md:prose-base lg:prose-lg prose-slate dark:prose-invert mx-auto">
-      <ComponentToRender />
-    </article>
+    <div className="mx-6">
+      <article className="prose prose-sm md:prose-base lg:prose-lg prose-slate dark:prose-invert mx-auto">
+        <ComponentToRender />
+      </article>
+    </div>
   );
 };
 

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -5,6 +6,23 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import SlideEffect from "./SlideEffect";
 
 const projects = [
+  {
+    name: "Mininsta - Social Media App",
+    description:
+      "Built with MERN. Create and share Posts. Like other's posts. View communities.",
+    image: "/project-mininsta.png",
+    github: "https://github.com/rohitbrk/mininsta",
+    link: "https://mininsta.vercel.app/",
+    tags: [
+      "ReactJs (TS)",
+      "NodeJs",
+      "ExpressJs",
+      "MongoDb",
+      "Mongoose",
+      "TailwindCSS",
+      "Auth0",
+    ],
+  },
   {
     name: "Chatty - RealtimeChat",
     description:
@@ -96,13 +114,15 @@ const Projects = () => {
               <SlideEffect offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className="md:w-1/2 flex justify-center items-center">
-                    <Image
-                      src={project.image}
-                      alt="Project Image"
-                      width={1000}
-                      height={1000}
-                      className="rounded-xl shadow-xl hover:opacity-90 bg-white"
-                    />
+                    <a href={`${window.location.origin}${project.image}`}>
+                      <Image
+                        src={project.image}
+                        alt="Project Image"
+                        width={1000}
+                        height={1000}
+                        className="rounded-xl shadow-xl hover:opacity-90 bg-white"
+                      />
+                    </a>
                   </div>
                   <div className="mt-8 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>

@@ -39,13 +39,13 @@ const WorkExperience = () => {
           <h3 className="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">
             {item.period}
           </h3>
-          <ul className="text-left mb-3 font-normal text-gray-700 dark:text-gray-400">
+          {/* <ul className="text-left mb-3 font-normal text-gray-700 dark:text-gray-400">
             {item.points.map((nestedItem) => (
               <li key={nestedItem} className="list-disc">
                 {nestedItem}
               </li>
             ))}
-          </ul>
+          </ul> */}
           <Link
             href="#projects"
             className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"

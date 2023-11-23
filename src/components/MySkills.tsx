@@ -1,3 +1,5 @@
+import TechCard from "./common/TechCard";
+
 const skills = [
   "HTML",
   "CSS",
@@ -20,16 +22,9 @@ const MySkills = () => {
     <div className="text-center mb-6">
       <h1 className="text-2xl font-bold mb-2">My Skills</h1>
       <div className="flex flex-wrap flex-row justify-center md:px-24 md:justify-center">
-        {skills.map((item) => {
-          return (
-            <p
-              key={item}
-              className="px-4 py-2 mr-2 mt-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-            >
-              {item}
-            </p>
-          );
-        })}
+        {skills.map((item) => (
+          <TechCard item={item} />
+        ))}
       </div>
     </div>
   );

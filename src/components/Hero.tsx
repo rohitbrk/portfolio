@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { HiArrowDown } from "react-icons/hi";
+import Button from "./common/Button";
 
 const Hero = () => {
   return (
@@ -29,27 +30,7 @@ const Hero = () => {
             based in Bengaluru, India. A Tech Enthusiast working towards
             building reliable products.
           </p>
-          <Link
-            href="#projects"
-            className="inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            projects
-            <svg
-              className="w-3.5 h-3.5 ml-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </Link>
+          <Button name="projects" href="#projects" textSize="lg" />
         </div>
       </div>
       <div className="flex flex-row items-center text-center justify-center ">

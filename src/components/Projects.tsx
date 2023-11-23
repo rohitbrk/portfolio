@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import SlideEffect from "./SlideEffect";
+import TechCard from "./common/TechCard";
+import ProjectLinksCard from "./common/ProjectLinksCard";
 
 const projects = [
   {
@@ -114,7 +114,7 @@ const Projects = () => {
               <SlideEffect offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className="md:w-1/2 flex justify-center items-center">
-                    <a href={`${window.location.origin}${project.image}`}>
+                    <a href={`${project.image}`} target="_blank">
                       <Image
                         src={project.image}
                         alt="Project Image"
@@ -130,31 +130,14 @@ const Projects = () => {
                       {project.description}
                     </p>
                     <div className="mb-4 flex flex-wrap flex-row justify-start md:justify-start">
-                      {project.tags.map((tag) => {
-                        return (
-                          <p
-                            key={tag}
-                            className="px-4 py-2 mr-2 mt-2 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                          >
-                            {tag}
-                          </p>
-                        );
-                      })}
+                      {project.tags.map((tag) => (
+                        <TechCard key={tag} item={tag} />
+                      ))}
                     </div>
-                    <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
-                      <Link href={project.link} target="_blank">
-                        <BsArrowUpRightSquare
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
-                    </div>
+                    <ProjectLinksCard
+                      github={project.github}
+                      link={project.link}
+                    />
                   </div>
                 </div>
               </SlideEffect>

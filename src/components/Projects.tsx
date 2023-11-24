@@ -114,15 +114,13 @@ const Projects = () => {
               <SlideEffect offset="-300px 0px -300px 0px">
                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                   <div className="md:w-1/2 flex justify-center items-center">
-                    <a href={`${project.image}`} target="_blank">
-                      <Image
-                        src={project.image}
-                        alt="Project Image"
-                        width={1000}
-                        height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-90 bg-white"
-                      />
-                    </a>
+                    <Image
+                      src={project.image}
+                      alt="Project Image"
+                      width={1000}
+                      height={1000}
+                      className="cursor-pointer rounded-xl shadow-xl bg-white hover:scale-150 duration-500 transition-transform"
+                    />
                   </div>
                   <div className="mt-8 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>

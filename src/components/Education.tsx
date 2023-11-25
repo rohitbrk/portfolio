@@ -1,7 +1,7 @@
 const education = [
   {
     id: 1,
-    course: "Bachelor of Technology",
+    course: "Bachelor of Technology - CSE",
     batch: "(2017 - 2021)",
     // grade: "7.02 CGPA",
     location: "JNTUACEP",

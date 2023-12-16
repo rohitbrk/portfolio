@@ -1,4 +1,5 @@
 // @ts-nocheck
+import Database from "@/blogs/Database";
 import NodeJs from "../../../blogs/NodeJs";
 import ReactJs from "../../../blogs/ReactJs";
 
@@ -13,6 +14,9 @@ const Page = ({ params }: Props) => {
       break;
     case "NodeJs":
       ComponentToRender = NodeJs;
+      break;
+    case "Database":
+      ComponentToRender = Database;
       break;
   }
 

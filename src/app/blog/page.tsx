@@ -19,6 +19,13 @@ const Blog = () => {
       date: "05 Oct 2023",
       desc: "Introduction to Backend Engineering - NodeJs",
     },
+    {
+      slug: "Database",
+      imgUrl: "/database-logo.png",
+      title: "Database",
+      date: "17 Oct 2023",
+      desc: "Introduction to Database",
+    },
   ];
   return (
     <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl m-20">

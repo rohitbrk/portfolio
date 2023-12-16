@@ -71,6 +71,35 @@ const ReactJs = () => {
         </p>
       </div>
       <div>
+        <h3>Virtua DOM</h3>
+        <p>
+          Virtual DOM is the virtual representation of Real DOM. React update
+          the state changes in Virtual DOM first and then it syncs with Real
+          DOM.
+        </p>
+        <h4
+          style={{
+            textAlign: "center",
+            boxShadow: "0 8px 16px 0 rgba(0,0,0,0.2)",
+            marginLeft: "2rem",
+            marginRight: "2rem",
+            width: "74%",
+            borderRadius: "0.4rem",
+          }}
+        >
+          Virtual DOM - Virtual Document Object Model
+        </h4>
+        <img
+          src="/reactjs-virtual-dom.png"
+          alt="reactjs-virtual-dom"
+          style={{ width: "32rem", borderRadius: "0.4rem" }}
+        />
+        <p>
+          Runs diffing algorithm to compare the previous created component tree
+          with the new one and does Reconciliation.
+        </p>
+      </div>
+      <div>
         <h3>Props and State</h3>
         <h4
           style={{
@@ -108,8 +137,12 @@ const ReactJs = () => {
           itself. <code>setCount</code> function is used to manipulate{" "}
           <code>count</code>.
         </p>
+        <p>
+          Component is written using JSX, Syntax extension to JavaScript. Most
+          React projects use JSX for its convenience. It makes defining
+          components easier.
+        </p>
       </div>
-
       <div>
         <h3>Hooks</h3>
         <h4

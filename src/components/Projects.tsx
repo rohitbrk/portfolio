@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import SlideEffect from "./SlideEffect";
 import TechCard from "./common/TechCard";
-import ProjectLinksCard from "./common/ProjectLinksCard";
+import ProjectLinks from "./common/ProjectLinks";
 
 const projects = [
   {
@@ -132,10 +132,7 @@ const Projects = () => {
                         <TechCard key={tag} item={tag} />
                       ))}
                     </div>
-                    <ProjectLinksCard
-                      github={project.github}
-                      link={project.link}
-                    />
+                    <ProjectLinks github={project.github} link={project.link} />
                   </div>
                 </div>
               </SlideEffect>

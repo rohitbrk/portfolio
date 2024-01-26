@@ -7,7 +7,7 @@ const GetToKnowMe = () => {
       <div className="flex flex-row justify-center">
         <h2 className="text-l font-bold mb-2 flex flex-row">Interests</h2>
         &nbsp;-&nbsp;
-        <p>Yoga, Trecking </p>
+        <p>Yoga, Trekking </p>
       </div>
       <SocialLinks size={40} />
     </div>

@@ -9,7 +9,7 @@ const projects = [
   {
     name: "Mininsta - Social Media App",
     description:
-      "Built with MERN. Create and share Posts. Like other's posts. View communities.",
+      "Built using MERN stack. Create and share posts. Like other's posts. View communities.",
     image: "/project-mininsta.png",
     github: "https://github.com/rohitbrk/mininsta",
     link: "https://mininsta.vercel.app/",
@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Chatty - RealtimeChat",
     description:
-      "Built with MERN. Supports Multimedia (Images, Videos etc) sharing too.",
+      "Built using MERN stack. Supports multimedia (Images, Videos etc) sharing.",
     image: "/project-chatty.png",
     github: "https://github.com/rohitbrk/chatty",
     link: "https://chatty-easy-app.vercel.app/",
@@ -43,7 +43,7 @@ const projects = [
   },
   {
     name: "VidChat - Video Call app",
-    description: "Make Video Calls with ease. Supports ScreenSharing.",
+    description: "Make video calls with ease. Supports screenSharing.",
     image: "/project-vidchat.png",
     github: "https://github.com/rohitbrk/vidchat",
     link: "https://vidchat-black.vercel.app/",
@@ -60,7 +60,7 @@ const projects = [
   {
     name: "Predict Nationality",
     description:
-      "Just A Fun App which will predict the nationality based on person's name",
+      "Just A Fun app which will predict the nationality based on person's name",
     image: "/project-predict-nationality.png",
     github: "https://github.com/rohitbrk/prediction-app-nextjs13",
     link: "https://prediction-app-nextjs.vercel.app/",

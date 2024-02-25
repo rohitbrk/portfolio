@@ -1,21 +1,22 @@
 import TechCard from "./common/TechCard";
 
 const skills = [
-  "HTML",
-  "CSS",
+  "HTML5",
+  "CSS3",
+  "Bootstrap",
+  "Tailwind CSS",
   "JavaScript",
   "TypeScript",
+  "ReactJs",
+  "NextJs",
   "C",
   "Java",
   "Python",
-  "ReactJs",
-  "NextJs",
-  "Tailwind CSS",
   "NodeJs",
   "DSA",
-  "Docker",
   "MongoDB",
   "SQL",
+  "Docker",
 ];
 const MySkills = () => {
   return (

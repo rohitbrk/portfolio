@@ -9,7 +9,7 @@ const workExperience = [
   },
   {
     id: 2,
-    role: "Fullstack Developer",
+    role: "Software Engineer",
     company: "1Pharmacy Network",
     period: "Dec 2021 - Sep 2022",
   },

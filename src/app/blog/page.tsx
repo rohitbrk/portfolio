@@ -1,47 +1,44 @@
 // @ts-nocheck
+"use client";
 import Button from "@/components/common/Button";
 import Image from "next/image.js";
 import Link from "next/link";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import { useEffect, useState } from "react";
 
 const client = new ApolloClient({
-  uri: process.env.HYGRAPH_URL,
+  uri: process.env.NEXT_PUBLIC_HYGRAPH_URL,
   cache: new InMemoryCache(),
 });
 
-let BLOGS = [];
-
-const getData = async () => {
-  const data = await client.query({
-    query: gql`
-      query Blogs {
-        blogs {
-          title
-          slug
-          date
-          desc
-          imgUrl {
-            url
-          }
-        }
-      }
-    `,
-    context: {
-      fetchOptions: {
-        next: { revalidate: 60 },
-      },
-    },
-  });
-  BLOGS = data.data.blogs;
-};
-getData();
-
 const Blog = () => {
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    const getData = async () => {
+      const data = await client.query({
+        query: gql`
+          query Blogs {
+            blogs {
+              title
+              slug
+              date
+              desc
+              imgUrl {
+                url
+              }
+            }
+          }
+        `,
+      });
+      setBlogs((prev) => data.data.blogs);
+    };
+    getData();
+  }, []);
   return (
     <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl m-20">
       <div className="p-2 flex flex-col gap-1 justify-center items-center">
         {" "}
-        {BLOGS?.map((item) => (
+        {blogs?.map((item) => (
           <div
             key={item.slug}
             className="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow dark:hover:shadow-xl"

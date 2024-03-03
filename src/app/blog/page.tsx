@@ -36,7 +36,7 @@ const Blog = () => {
     <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl m-20">
       <div className="p-2 flex flex-col gap-1 justify-center items-center">
         {" "}
-        {blogs?.map((item) => (
+        {BLOGS?.map((item) => (
           <div
             key={item.slug}
             className="max-w-sm bg-white border border-gray-200 rounded-lg shadow hover:shadow-xl dark:bg-gray-800 dark:border-gray-700 dark:shadow dark:hover:shadow-xl"

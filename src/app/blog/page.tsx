@@ -2,8 +2,12 @@
 import Button from "@/components/common/Button";
 import Image from "next/image.js";
 import Link from "next/link";
-import { client } from "../../utils/apolloClient";
-import { gql } from "@apollo/client";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+
+const client = new ApolloClient({
+  uri: process.env.HYGRAPH_URL,
+  cache: new InMemoryCache(),
+});
 
 let BLOGS = [];
 

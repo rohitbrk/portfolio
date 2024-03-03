@@ -10,7 +10,7 @@ const client = new ApolloClient({
   uri: process.env.NEXT_PUBLIC_HYGRAPH_URL,
   cache: new InMemoryCache(),
 });
-
+console.log(process.env.NEXT_PUBLIC_HYGRAPH_URL);
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {

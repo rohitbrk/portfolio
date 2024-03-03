@@ -31,6 +31,7 @@ const Blog = () => {
         `,
       });
       setBlogs((prev) => data.data.blogs);
+      console.log(data.data.blogs);
     };
     getData();
   }, []);

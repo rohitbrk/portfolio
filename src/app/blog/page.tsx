@@ -1,5 +1,4 @@
 // @ts-nocheck
-"use client";
 import Button from "@/components/common/Button";
 import Image from "next/image.js";
 import Link from "next/link";
@@ -7,10 +6,10 @@ import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import { useEffect, useState } from "react";
 
 const client = new ApolloClient({
-  uri: process.env.NEXT_PUBLIC_HYGRAPH_URL,
+  uri: process.env.HYGRAPH_URL,
   cache: new InMemoryCache(),
 });
-console.log(process.env.NEXT_PUBLIC_HYGRAPH_URL);
+
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
@@ -31,7 +30,6 @@ const Blog = () => {
         `,
       });
       setBlogs((prev) => data.data.blogs);
-      console.log(data.data.blogs);
     };
     getData();
   }, []);

@@ -26,7 +26,7 @@ const projects = [
   {
     name: "Webtor - Offline web editor",
     description:
-      "Playground for Web technologies. Supports IntelliSense code completion, syntax highlighting and amny modern editor features",
+      "Playground for Web technologies. Supports IntelliSense code completion, syntax highlighting and many modern editor features",
     image: "/project-webtor.png",
     github: "https://github.com/rohitbrk/webtor",
     link: "https://webtor-app.vercel.app/",

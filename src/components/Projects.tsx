@@ -24,6 +24,30 @@ const projects = [
     ],
   },
   {
+    name: "Webtor - Offline web editor",
+    description:
+      "Playground for Web technologies. Supports IntelliSense code completion, syntax highlighting and amny modern editor features",
+    image: "/project-webtor.png",
+    github: "https://github.com/rohitbrk/webtor",
+    link: "https://webtor-app.vercel.app/",
+    tags: ["ReactJs (TS)"],
+  },
+  {
+    name: "Ticket Up - Kanban board",
+    description:
+      "Manage tasks with ease. Create containers and items. Supports drag and drop",
+    image: "/project-ticket-up.png",
+    github: "https://github.com/rohitbrk/ticket-up",
+    link: "https://ticket-up-app.vercel.app/",
+    tags: [
+      "ReactJs (TS)",
+      "DND-kit",
+      "radix-ui",
+      "TailwindCSS",
+      "framer-motion",
+    ],
+  },
+  {
     name: "Chatty - RealtimeChat",
     description:
       "Built using MERN stack. Supports multimedia (Images, Videos etc) sharing.",

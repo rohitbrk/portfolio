@@ -8,9 +8,9 @@ import LinkCard from "./LinkCard";
 
 const links = [
   { href: "https://github.com/rohitbrk", Component: AiOutlineGithub },
-  { href: "https://twitter.com/rohitbrk_", Component: AiOutlineTwitter },
+  { href: "https://twitter.com/rohithkbathula", Component: AiOutlineTwitter },
   {
-    href: "https://www.linkedin.com/in/rohitbrk/",
+    href: "https://www.linkedin.com/in/rohithkumarbathula/",
     Component: AiOutlineLinkedin,
   },
   { href: "mailto:rohithkumarbathula99@gmail.com", Component: MdEmail },
